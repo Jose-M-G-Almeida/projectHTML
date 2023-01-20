@@ -1,20 +1,87 @@
 header p {
-    text-align: center;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 500%;
+  font-family: 'oswald';
+  font-size: 500%;
+  text-align: center;
 }
 
 body {
-    background-color: whitesmoke;
-}
-
-main {
-    
+  background-color: whitesmoke;
 }
 
 main p {
-    font-family: 'Sofia sans extra condensed', sans-serif;
-    font-size: 150%;
-    text-align: justify;
-    
+  font-family: 'oswald';
+  font-size: 20px;
+  text-align: justify;
+
+}
+
+main h1 {
+  font-family: 'oswald';
+
+
+}
+
+/*NAVBAR-INICIO-*/
+ul {
+  display: flex;
+  width: 100%;
+  height: 5vh;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+li a {
+  font-family: 'Gill Sans';
+  padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: black;
+  min-width: 80px;
+  margin: auto;
+}
+
+li:hover {
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+  font-weight: bold;
+}
+
+li:active {
+  transform: translateY(4px);
+}
+
+ul.no-bullets {
+  margin: 0 !important;
+  padding: 0px 10vw !important;
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+  /*nav bar fixa */
+  position: sticky;
+  top: 0;
+  /* acrescenta fundo á nav bar*/
+  background-color: whitesmoke;
+}
+
+/*NAVBAR-FIM-*/
+
+footer {
+  background-color: whitesmoke;
+  color: rgb(16, 14, 14);
+  padding: 20px;
+  text-align: center;
+  font-family: 'gill sans';
+  font-size: small;
+  position: sticky;
+
+}
+
+/* Make the footer responsive */
+@media (max-width: 600px) {
+  footer {
+    padding: 1px;
+  }
 }
